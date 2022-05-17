@@ -144,16 +144,26 @@ table {
     position: absolute;
     top: 0px;
     right: 0px;
+    z-index: 0;
 }
 
 .img1{
     position: absolute;
 }
 
-.header a{
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
+    left: 10px;
+    z-index: 3;
+}
+.header a{
+    /* position: absolute; */
     top: 24px;
     right: 139;
+    padding: 24px;
 }
 
 .backEllipse3{

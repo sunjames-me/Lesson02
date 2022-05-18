@@ -133,6 +133,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+/*  */
 .container{
     width: 1366px;
     margin: 0px auto;
@@ -151,23 +152,36 @@ table {
     position: absolute;
 }
 
-.header{
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: absolute;
-    left: 10px;
-    z-index: 3;
+    justify-content: space-between;
+    margin: 30px;
 }
-.header a{
-    /* position: absolute; */
-    top: 24px;
-    right: 139;
-    padding: 24px;
+
+.header a {
+    text-decoration: none;
+    z-index: 3;
+
+}
+.header p{
+    background-color: #FF5D50;
+    color: white;
+    padding: 8px 32px;
+    border-radius: 20px;
 }
 
 .backEllipse3{
     position: absolute;
     left: -222px;
     top: 588px;
+}
+.banner{
+    display: flex;
+    z-index: 4;
+}
+.aside{
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
 }

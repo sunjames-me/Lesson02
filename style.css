@@ -133,55 +133,294 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 /*  */
-.container{
-    width: 1366px;
-    margin: 0px auto;
+/*  */
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.backArea{
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221e1f;
+    padding: 48px;
+}
+
+@media (max-width: 375px) {
+    h2 {
+        text-align: center;
+        font: normal normal bold 28px/40px Noto Sans TC;
+        letter-spacing: 0px;
+        color: #221e1f;
+    }
+}
+
+.cart {
     display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 0;
-}
-
-.img1{
-    position: absolute;
-}
-
-.header {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 30px;
+    flex-wrap: wrap;
 }
 
-.header a {
-    text-decoration: none;
-    z-index: 3;
-
-}
-.header p{
-    background-color: #FF5D50;
-    color: white;
-    padding: 8px 32px;
-    border-radius: 20px;
-}
-
-.backEllipse3{
-    position: absolute;
-    left: -222px;
-    top: 588px;
-}
-.banner{
+.cart-item {
+    width: 26%;
     display: flex;
-    z-index: 4;
-}
-.aside{
-    /* display: flex; */
-    /* justify-content: center; */
+    flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 375px) {
+    .cart-item {
+        width: 100%;
+        padding-top: 24px;
+    }
+}
+
+.cart-item img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.cart-item h3 {
+    text-align: center;
+    font: normal normal bold 24px/35px Noto Sans TC;
+    /*   letter-spacing: 0px; */
+    color: #221e1f;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.cart-item p {
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #747474;
+}
+
+h3 {
+    text-align: center;
+    font: normal normal normal 20px/29px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221e1f;
+}
+
+.cartRole {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.cartRitem {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*   border: 1px solid #000; */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@media (max-width: 375px) {
+    .cartRitem {
+        width: 100%;
+        padding-top: 24px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 12px;
+    }
+
+    .cartRitem img {
+        width: 260px;
+        height: 260px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+}
+
+.cartRitem img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.cartRitem h3 {
+    text-align: center;
+    font: normal normal bold 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #56c4c5;
+    padding-top: 16px;
+}
+
+.cartRitem p {
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221e1f;
+    padding: 16px;
+}
+
+/* cart3 */
+.cart3 {
+    display: flex;
+    padding-top: 100px;
+    /* max-width: 50%; */
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.aside {
+    display: flex;
+    max-width: 50%;
+    flex-wrap: wrap;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+}
+
+.bside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bside h2 {
+    text-align: left;
+}
+
+.cart3Item {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    width: 230px;
+    height: 280px;
+    /* position: relative; */
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.cart3Item img {
+    width: 52px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    padding: 15px;
+    border-radius: 50%;
+    /* position: absolute;
+    top: 32;
+    left: 32px; */
+}
+
+.cart3Item h3 {
+    margin-right: auto;
+    padding-top: 24px;
+}
+
+.cart3Item p {
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    padding-top: 16px;
+}
+
+@media (max-width: 375px) {
+    .cart3Item {
+        width: 100%;
+        padding-top: 24px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 12px;
+    }
+
+    .cart3Item img {
+        width: 260px;
+        height: 260px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+}
+
+/* cart4 */
+.cart4 {
+    display: flex;
+    padding-top: 100px;
+}
+
+
+
+.cart4Item {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding-top: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 24px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.cart4Item img {
+    border-radius: 50%;
+    width: 80px;
+    background: transparent url('img/1.png') 0% 0% no-repeat padding-box;
+    position: absolute;
+    top: -60px;
+}
+
+.cart4Item p {
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    height: 120px;
+}
+
+hr {
+    border: 1px solid #DDDDDD;
+}
+
+.cart4Item h3 {
+    text-align: left;
+    font: normal normal bold 16px/24px Noto Sans TC;
+    /* letter-spacing: 0px; */
+    color: #221E1F;
+    padding-top: 24px;
+}
+
+.barStar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star p {
+    color: #F5CA52;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+}
+
+.footer h2 {
+    position: absolute;
+    top: 50%;
+    text-align: center;
 }

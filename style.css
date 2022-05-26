@@ -136,11 +136,99 @@ table {
 
 /*  */
 /*  */
+
+.bgHome img {
+    width: 60%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.ball01 img {
+    width: 360px;
+    position: absolute;
+    top: 589px;
+    left: -222px;
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    /* position: relative; */
+    z-index: 1;
+}
+
+.header h1 {
+    z-index: 1;
+}
+
+.plan a {
+    position: absolute;
+    justify-content: center;
+    padding: 8px 24px 8px 24px;
+    right: 139px;
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    z-index: 1;
+    text-decoration: none;
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.plan a:hover {
+    background: #56C4C5 0% 0% no-repeat padding-box;
+}
+
+
+
 .container {
     max-width: 1120px;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.banner {
+    width: 1085px;
+    height: 534px;
+    display: flex;
+
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slogan h2 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.chatTalker {
+    text-align: left;
+    font: normal normal bold 18px/26px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #56C4C5;
+}
+
+.banner h2 {
+    text-align: left;
+    padding: 0px;
+}
+
+.banner img {
+    width: 532px;
+    position: absolute;
+    right: 140px;
+    top: 118px;
+    z-index: 1;
 }
 
 img {
@@ -416,11 +504,19 @@ hr {
 
 .footer {
     position: relative;
-    display: flex;
+    /* display: flex; */
 }
 
 .footer h2 {
     position: absolute;
+    /* justify-content: center;
+    align-items: center; */
     top: 50%;
+    left: 28%;
     text-align: center;
+}
+
+.footer .plan {
+    right: 615px;
+
 }

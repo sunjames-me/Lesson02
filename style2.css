@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*  */
+/*  */
+.warp {
+    position: relative;
+    max-width: 1366px;
+    height: 470px;
+    background: #F7F9FD 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 300px;
+    z-index: -2;
+}
+
+.banner {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    width: 885px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    padding-left: 142px;
+    padding-top: 24px;
+}
+
+.plan {
+    padding: 32px 171px;
+}
+
+.plan a {
+    padding: 8px 32px 8px 32px;
+    text-decoration: none;
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    color: #FFFFFF;
+    flex-wrap: nowrap;
+}
+
+.home {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.home h2 {
+    /* text-align: left; */
+    font: normal normal bold 48px/70px Noto Sans TC;
+    /* letter-spacing: 0px; */
+    color: #221E1F;
+    padding-top: 116px;
+    padding-left: 139px;
+}
+
+.home p {
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    padding-top: 16px;
+    padding-left: 139px;
+}
+
+.content h3 {
+    padding-top: 100px;
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+
+.planList {
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.planList a {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    padding: 12px 32px;
+    color: #56C4C5;
+    text-decoration: none;
+
+}

@@ -154,19 +154,6 @@ table {
     width: 885px;
 }
 
-/* @media (max-width: 992px) {
-    .banner img {
-        display: none;
-    }
-
-    .headerBanner {
-        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg");
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: contain;
-    }
-} */
-
 
 .content {
     max-width: 1366px;

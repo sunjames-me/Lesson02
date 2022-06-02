@@ -135,388 +135,386 @@ table {
 }
 
 /*  */
+/* Reset CSS end */
 /*  */
 
-.bgHome img {
-    width: 60%;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: -1;
+/* headerBanner */
+.headerBanner {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
-.ball01 img {
-    width: 360px;
-    position: absolute;
-    top: 589px;
-    left: -222px;
-    z-index: -1;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    padding: 24px;
-    /* position: relative; */
-    z-index: 1;
-}
-
-.header h1 {
-    z-index: 1;
-}
-
-.plan a {
-    position: absolute;
-    justify-content: center;
-    padding: 8px 24px 8px 24px;
-    right: 139px;
-    background: #FF5D50 0% 0% no-repeat padding-box;
-    border-radius: 22px;
-    z-index: 1;
-    text-decoration: none;
-    text-align: left;
-    font: normal normal normal 16px/24px Noto Sans TC;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-}
-
-.plan a:hover {
-    background: #56C4C5 0% 0% no-repeat padding-box;
-}
-
-
-
-.container {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.banner {
-    width: 1085px;
-    height: 534px;
-    display: flex;
-
-}
-
-.slogan {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.slogan h2 {
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.chatTalker {
-    text-align: left;
-    font: normal normal bold 18px/26px Noto Sans TC;
-    letter-spacing: 0px;
-    color: #56C4C5;
-}
-
-.banner h2 {
-    text-align: left;
-    padding: 0px;
-}
-
-.banner img {
-    width: 532px;
-    position: absolute;
-    right: 140px;
-    top: 118px;
-    z-index: 1;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-h2 {
-    text-align: center;
-    font: normal normal bold 32px/46px Noto Sans TC;
-    letter-spacing: 0px;
-    color: #221e1f;
-    padding: 48px;
-}
-
-@media (max-width: 375px) {
-    h2 {
-        text-align: center;
-        font: normal normal bold 28px/40px Noto Sans TC;
-        letter-spacing: 0px;
-        color: #221e1f;
+/* headerBanner RWD */
+@media (max-width: 992px) {
+    .headerBanner {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+        background-repeat: no-repeat;
+        background-position: center 400px;
+        background-size: contain;
     }
 }
 
-.cart {
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 142px;
+}
+
+@media (max-width: 992px) {
+    .header {
+        border-bottom: 2px solid #FFD153;
+    }
+}
+
+.header img {
+    height: 40px;
+}
+
+.planA {
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    padding: 8px 32px;
+    color: #FFFFFF;
+}
+
+.planA a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* banner */
+.banner {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.cart-item {
-    width: 26%;
+.aside {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 375px) {
-    .cart-item {
-        width: 100%;
-        padding-top: 24px;
+.aside h1 {
+    text-align: left;
+    font: normal normal bold 18px/26px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #56C4C5;
+    padding-left: 141px;
+}
+
+@media (max-width: 992px) {
+    .aside h1 {
+        padding-top: 32px;
     }
 }
 
-.cart-item img {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-}
-
-.cart-item h3 {
-    text-align: center;
-    font: normal normal bold 24px/35px Noto Sans TC;
-    /*   letter-spacing: 0px; */
-    color: #221e1f;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.cart-item p {
-    text-align: center;
-    font: normal normal normal 16px/24px Noto Sans TC;
+.aside h2 {
+    text-align: left;
+    font: normal normal bold 48px/70px Noto Sans TC;
     letter-spacing: 0px;
+    color: #221E1F;
+    padding-top: 8px;
+    padding-left: 141px;
+}
+
+.aside p {
+    text-align: left;
+    font: normal normal normal 20px/29px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    padding-left: 141px;
+}
+
+.banner img {
+    height: 534px;
+}
+
+/* card1 三大平台，我來搞定 */
+.card1 ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card1 img {
+    height: 90px;
+    padding-top: 48px;
+}
+
+.card1 li {
+    text-align: center;
+}
+
+.card1 h3 {
+    padding-top: 24px;
+    font: normal normal bold 24px/35px Noto Sans TC;
+}
+
+.card1 p {
+    padding-top: 24px;
+    font: normal normal normal 16px/24px Noto Sans TC;
     color: #747474;
+}
+
+
+/* card2 任何角色區段 */
+h2 {
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    padding-top: 100px;
 }
 
 h3 {
     text-align: center;
     font: normal normal normal 20px/29px Noto Sans TC;
-    letter-spacing: 0px;
-    color: #221e1f;
-}
-
-.cartRole {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
-.cartRitem {
-    width: 23%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*   border: 1px solid #000; */
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 2px 10px #00000014;
-    border-radius: 12px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-@media (max-width: 375px) {
-    .cartRitem {
-        width: 100%;
-        padding-top: 24px;
-        background: #ffffff 0% 0% no-repeat padding-box;
-        box-shadow: 0px 2px 10px #00000014;
-        border-radius: 12px;
-    }
-
-    .cartRitem img {
-        width: 260px;
-        height: 260px;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-    }
-}
-
-.cartRitem img {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.cartRitem h3 {
-    text-align: center;
-    font: normal normal bold 16px/24px Noto Sans TC;
-    letter-spacing: 0px;
-    color: #56c4c5;
     padding-top: 16px;
 }
 
-.cartRitem p {
-    text-align: center;
-    font: normal normal normal 16px/24px Noto Sans TC;
-    letter-spacing: 0px;
-    color: #221e1f;
-    padding: 16px;
-}
-
-/* cart3 */
-.cart3 {
-    display: flex;
-    padding-top: 100px;
-    /* max-width: 50%; */
-    margin: 0 auto;
-    justify-content: center;
-
-}
-
-.aside {
-    display: flex;
-    max-width: 50%;
-    flex-wrap: wrap;
-    /* padding-left: 32px;
-    padding-right: 32px; */
-}
-
-.bside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.bside h2 {
-    text-align: left;
-}
-
-.cart3Item {
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 2px 10px #00000014;
-    border-radius: 12px;
-    width: 230px;
-    height: 280px;
-    /* position: relative; */
-    padding-left: 32px;
-    padding-top: 32px;
-}
-
-.cart3Item img {
-    width: 52px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 2px 10px #00000014;
-    padding: 15px;
-    border-radius: 50%;
-    /* position: absolute;
-    top: 32;
-    left: 32px; */
-}
-
-.cart3Item h3 {
-    margin-right: auto;
-    padding-top: 24px;
-}
-
-.cart3Item p {
-    text-align: left;
-    font: normal normal normal 16px/24px Noto Sans TC;
-    letter-spacing: 0px;
-    color: #221E1F;
-    padding-top: 16px;
-}
-
-@media (max-width: 375px) {
-    .cart3Item {
-        width: 100%;
-        padding-top: 24px;
-        background: #ffffff 0% 0% no-repeat padding-box;
-        box-shadow: 0px 2px 10px #00000014;
-        border-radius: 12px;
-    }
-
-    .cart3Item img {
-        width: 260px;
-        height: 260px;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-    }
-
-}
-
-/* cart4 */
-.cart4 {
-    display: flex;
-    padding-top: 100px;
-}
-
-
-
-.cart4Item {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 2px 10px #00000014;
-    border-radius: 12px;
+.cardList {
     padding-top: 48px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 24px;
-    position: relative;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
 }
 
-.cart4Item img {
-    border-radius: 50%;
-    width: 80px;
-    background: transparent url('img/1.png') 0% 0% no-repeat padding-box;
-    position: absolute;
-    top: -60px;
+.cardItem {
+    width: 260px;
+    height: 388px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
-.cart4Item p {
+.cardItem img {
+    border-radius: 12px 12px 0px 0px;
+}
+
+.cardItem h3 {
+    text-align: center;
+    font: normal normal bold 16px/24px Noto Sans TC;
+    color: #56c4c5;
+}
+
+.cardItem p {
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    color: #221e1f;
+}
+
+/* 任何角色區段 ＲＷＤ */
+@media (max-width: 992px) {
+    .cardItem {
+        margin-top: 24px;
+    }
+}
+
+/* 快速瞭解客戶區域 */
+.card3 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.card3Side {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card3Item {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 10%;
+    margin: 8px;
+}
+
+.card3Item img {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    padding: 17px;
+    border-radius: 50px;
+}
+
+.card3Item h3 {
+    text-align: left;
+    font: normal normal bold 18px/26px Noto Sans TC;
+    color: #221E1F;
+}
+
+.card3Item p {
     text-align: left;
     font: normal normal normal 16px/24px Noto Sans TC;
-    letter-spacing: 0px;
     color: #221E1F;
-    height: 120px;
+    padding-top: 16px;
 }
 
-hr {
+.card3Title {
+    /* justify-content: center; */
+    /* align-items: left; */
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+}
+
+.card3Title h2 {
+    text-align: left;
+    padding-top: 265px;
+}
+
+.card3Title p {
+    padding-top: 16px;
+    text-align: left;
+    font: normal normal normal 18px/26px Noto Sans TC;
+}
+
+.plan {
+    flex: ;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 36px;
+}
+
+.plan p {
+    display: inline;
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    padding: 12px 32px;
+
+}
+
+/* 快速瞭解客戶區域 RWD */
+@media (max-width: 992px) {
+    .card3Item {
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .card3Title h2 {
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .card3Title p {
+        text-align: center;
+    }
+
+    .plan {
+        text-align: center;
+    }
+}
+
+/* card4 好評如潮區域 */
+.card4 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 104px;
+    flex-wrap: wrap;
+}
+
+.card4 img {
+    width: 80px;
+    border-radius: 50px;
+    position: absolute;
+    top: -56px;
+    left: 32px;
+}
+
+.card4Item {
+    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    max-width: 352px;
+}
+
+.card4Item h4 {
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    color: #221E1F;
+    padding: 48px 32px;
+}
+
+.card4Item hr {
     border: 1px solid #DDDDDD;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
-.cart4Item h3 {
+.card4Item h3 {
     text-align: left;
     font: normal normal bold 16px/24px Noto Sans TC;
-    /* letter-spacing: 0px; */
+    letter-spacing: 0px;
     color: #221E1F;
-    padding-top: 24px;
+    padding-left: 32px;
 }
 
-.barStar {
+.star {
     display: flex;
     justify-content: space-between;
+    padding: 8px 32px 24px 32px;
 }
 
-.star p {
+.starLine {
     color: #F5CA52;
 }
 
-.footer {
-    position: relative;
-    /* display: flex; */
+/* card4 好評如潮區域 RWD */
+@media (max-width: 992px) {
+    .card4Item {
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .card4Item img {
+        top: -34px;
+        left: 96px;
+    }
+
+    .none {
+        display: none;
+    }
 }
 
-.footer h2 {
-    position: absolute;
-    /* justify-content: center;
-    align-items: center; */
-    top: 50%;
-    left: 28%;
+/* <  footerBanner  */
+.footerBanner {
+    padding-top: 160px;
+    padding-bottom: 100px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.plan {
     text-align: center;
 }
 
-.footer .plan {
-    right: 615px;
+/* <  footerBanner RWD */
+@media (max-width: 992px) {
+    .footerBanner {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg");
+        background-size: contain;
+    }
 
+    .footerBanner h2 {
+        padding-top: 300px;
+    }
+}
+
+/* footer */
+.footer {
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }

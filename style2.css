@@ -135,7 +135,9 @@ table {
 }
 
 /*  */
+/* CSS Reset end */
 /*  */
+
 .warp {
     position: relative;
     max-width: 1366px;
@@ -187,7 +189,7 @@ table {
 }
 
 .home {
-    width: 470px;
+    max-width: 470px;
     display: flex;
     flex-direction: column;
     justify-content: center;

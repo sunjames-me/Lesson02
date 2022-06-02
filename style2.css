@@ -154,19 +154,57 @@ table {
     width: 885px;
 }
 
+/* @media (max-width: 992px) {
+    .banner img {
+        display: none;
+    }
+
+    .headerBanner {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+    }
+} */
+
+
 .content {
     max-width: 1366px;
 }
 
+/* header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 24px 142px;
 }
 
-.header h1 {
-    padding-left: 142px;
-    padding-top: 24px;
+.header img {
+    height: 40px;
+}
+
+@media (max-width: 992px) {
+    .header {
+        border-bottom: 2px solid #FFD153;
+    }
+
+    .header img {
+        padding-left: 21px;
+    }
+}
+
+
+.planA {
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    padding: 8px 32px;
+    color: #FFFFFF;
+}
+
+.planA a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .ball {
@@ -251,6 +289,7 @@ table {
     display: flex;
     /* margin: 0 auto; */
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .planListCartItem {

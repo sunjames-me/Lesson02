@@ -269,6 +269,12 @@ table {
     flex-wrap: wrap;
 }
 
+@media (max-width: 992px) {
+    .planList li {
+        padding-bottom: 48px;
+    }
+}
+
 .planList li {
     padding-left: 8px;
     padding-right: 8px;

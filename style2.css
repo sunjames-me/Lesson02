@@ -297,7 +297,6 @@ table {
 .planListCart {
     margin-top: 54px;
     display: flex;
-    /* margin: 0 auto; */
     justify-content: center;
     flex-wrap: wrap;
 }

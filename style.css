@@ -161,17 +161,24 @@ table {
     justify-content: space-between;
     align-items: center;
     padding: 24px 142px;
+    flex-wrap: wrap;
+}
+
+.header img {
+    height: 20%;
 }
 
 @media (max-width: 992px) {
     .header {
         border-bottom: 2px solid #FFD153;
+
+    }
+
+    .header img {
+        height: 24px;
     }
 }
 
-.header img {
-    height: 40px;
-}
 
 .planA {
     background: #FF5D50 0% 0% no-repeat padding-box;
@@ -231,6 +238,12 @@ table {
 
 .banner img {
     height: 534px;
+}
+
+@media (max-width: 992px) {
+    .banner img {
+        height: 305px;
+    }
 }
 
 /* card1 三大平台，我來搞定 */

@@ -154,6 +154,19 @@ table {
     width: 885px;
 }
 
+/* @media (max-width: 992px) {
+    .banner img {
+        display: none;
+    }
+
+    .headerBanner {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+    }
+} */
+
 
 .content {
     max-width: 1366px;
@@ -165,19 +178,21 @@ table {
     justify-content: space-between;
     align-items: center;
     padding: 24px 142px;
+    flex-wrap: wrap;
 }
 
 .header img {
-    height: 40px;
+    height: 20%;
 }
 
 @media (max-width: 992px) {
     .header {
         border-bottom: 2px solid #FFD153;
+
     }
 
     .header img {
-        padding-left: 21px;
+        height: 24px;
     }
 }
 
@@ -187,6 +202,7 @@ table {
     border-radius: 22px;
     padding: 8px 32px;
     color: #FFFFFF;
+    flex-wrap: wrap;
 }
 
 .planA a {
@@ -250,6 +266,7 @@ table {
     display: flex;
     justify-content: center;
     padding-top: 48px;
+    flex-wrap: wrap;
 }
 
 .planList li {
